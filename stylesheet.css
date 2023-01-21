@@ -1,0 +1,105 @@
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(6, 139, 128);
+  padding-top: 1px;
+  box-sizing: border-box;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
+header h1 {
+  text-indent: 1rem;
+  color: rgb(6, 139, 128);
+}
+footer {
+  width: 100%;
+  height: 210px;
+  background-color: rgb(145, 206, 202);
+  padding-top: 1px;
+  box-sizing: border-box;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  list-style: none;
+  text-align: center;
+}
+footer ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin-right: 35px;
+}
+footer hr {
+  color: darkgrey;
+}
+
+body {
+  width: auto;
+}
+p {
+  text-indent: 1rem;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+h1 {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+h2 {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+h3 {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+ul {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+ol {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.flex {
+  display: flex; /*横並び*/
+  margin-left: 3%;
+}
+.flex .image {
+  width: 45%; /*画像サイズ指定*/
+  margin: 0 0 0 auto;
+  padding: 0;
+  overflow: hidden;
+  position: relative; 
+}
+.box1 {
+  width: 50%;
+}
+.box1 h2 {
+  margin-left: 0%;
+}
+.box1 h3 {
+  margin-left: 0%;
+}
+.box1 p {
+  text-indent: 0pt;
+}
+.box2 {
+  width: 50%;
+}
+.box2 h2 {
+  margin-left: 0%;
+}
