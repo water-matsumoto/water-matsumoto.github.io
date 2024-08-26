@@ -1,26 +1,39 @@
-nav {
+header {
+  width: 100%; /* 幅いっぱいを指定 */
+  height: 140px; /* 高さを50pxに指定 */
+  background-color: rgb(145, 206, 202);
+  padding: 0px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+  box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+  position: fixed; /* ウィンドウを基準に画面に固定 */
+  top: 0; /* 上下の固定位置を上から0pxにする */
+  left: 0; /* 左右の固定位置を左から0pxにする */
+}
+
+header h1 {
   width: 100%;
   height: 60px;
-  background-color: rgb(6, 139, 128);
-  padding-top: 1px;
-  box-sizing: border-box;
+  color: black;
 }
-nav ul {
-  display: flex;
+
+header .gnav .menu {
+  display: flex; /* 中の要素を横並びにする */
+
 }
-nav ul li {
-  list-style: none;
+
+header .gnav .menu li {
+  list-style: none; /* リストの[・]を消す */
 }
-nav ul li a {
-  display: block;
+
+header .gnav .menu li + li {
+  margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+}
+
+header .gnav .menu li a {
+  display: inline-block;
   text-decoration: none;
-  color: white;
-  margin-right: 35px;
+  color: black;
 }
-header h1 {
-  text-indent: 1rem;
-  color: rgb(6, 139, 128);
-}
+
 footer {
   width: 100%;
   height: 210px;
@@ -28,47 +41,59 @@ footer {
   padding-top: 1px;
   box-sizing: border-box;
 }
+
 footer ul {
   display: flex;
 }
+
 footer ul li {
   list-style: none;
   text-align: center;
 }
+
 footer ul li a {
   display: inline-block;
   text-decoration: none;
   color: black;
   margin-right: 35px;
 }
+
 footer hr {
   color: darkgrey;
 }
 
 body {
+  padding-top: 140px; /* ヘッダーの後ろに要素が隠れないようにするため */
+  margin: 0px 50px;
   width: auto;
 }
+
 p {
   text-indent: 1rem;
   margin-left: 3%;
   margin-right: 3%;
 }
+
 h1 {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 h2 {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 h3 {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 ul {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 ol {
   margin-left: 3%;
   margin-right: 3%;
@@ -78,28 +103,35 @@ ol {
   display: flex; /*横並び*/
   margin-left: 3%;
 }
+
 .flex .image {
-  width: 45%; /*画像サイズ指定*/
+  width: 30%; /*画像サイズ指定*/
   margin: 0 0 0 auto;
   padding: 0;
   overflow: hidden;
   position: relative; 
 }
+
 .box1 {
   width: 50%;
 }
+
 .box1 h2 {
   margin-left: 0%;
 }
+
 .box1 h3 {
   margin-left: 0%;
 }
+
 .box1 p {
   text-indent: 0pt;
 }
+
 .box2 {
   width: 50%;
 }
+
 .box2 h2 {
   margin-left: 0%;
 }
